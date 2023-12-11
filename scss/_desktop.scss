@@ -1,0 +1,193 @@
+@media (min-width: $puntodequiebre) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: black;
+        opacity: 0.8;
+
+        .contenedor {
+
+            #menu-check, #menu-celu {
+                display: none;
+            }
+             
+            
+            nav {
+                display: flex;
+                justify-content: center;
+               
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 20px;
+                    opacity: 0.8;
+                    font-size: large;
+                    font-family: sans-serif;
+                    font-weight: bolder;
+
+                    li {
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            padding: 20px;
+                            margin: 0px;
+                        }
+                    }
+
+                    #menu-seleccionado { 
+                        a {
+                            background-color: white;
+                            color:black;
+                            text-decoration: none;
+                            margin: 0px;  
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    main {
+
+        #carouselExampleFade {
+            z-index: 1;
+        }
+
+        #foto-mobile{
+            display: none;
+        } 
+
+        h1 {
+            display: grid;
+            grid-row: 1/2;
+            justify-items: center;
+            padding: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+    
+        h2 {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 20px 0px;
+        }
+    
+        p {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-style: normal;
+            font-size: medium;
+        }
+    
+        .bloque-de-texto {
+            background-color: whitesmoke;
+        }
+    
+        .texto-inicio {
+            display: grid;
+            grid-row: 2/6;
+            font-family: Arial, sans-serif;
+            font-size: xx-large;
+            text-align: center;
+        }
+    
+        .fondo1{
+            background-color: #9dae6f;
+            font-family: sans-serif;
+            font-size: medium;
+            padding: 10%;
+            color: white;
+            font-weight: bolder;
+            margin: 0;
+        }
+        
+        .fondo2{
+            background-color: white;
+            font-family: sans-serif;
+            font-size: medium;
+            padding: 10%;
+            color:#9dae6f;
+            font-weight: bolder;
+            margin: 0;
+        }
+
+        .iconos {
+            display: grid;
+            grid-template-columns: 20% 20% 20%;
+            justify-content: center;
+            padding: 30px;
+        }
+    
+        #logo-general{
+            max-width: 5%;
+            margin-left: 95%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .asesoria {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            margin-left: 25%;
+            margin-right: 25%;
+
+            input {
+                background-color: #9dae6f;
+                color: white;
+            }
+
+            label {
+                color: black;
+                font-family: sans-serif;
+            }
+
+            textarea{
+                background-color: #9dae6f;
+                color: white;
+            }
+        }
+
+        #maps {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px;
+        }
+
+    }
+
+    footer {
+        div {
+            p {
+                background-color: black;
+                opacity: 0.8;
+                color: white;
+                font-family: sans-serif;
+                font-weight: lighter;
+                padding: 1%;
+                text-align: center;  
+            }
+        }
+    }
+
+
+}

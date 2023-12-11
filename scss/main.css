@@ -1,0 +1,341 @@
+@media (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header .contenedor {
+    display: flex;
+    place-content: space-between;
+  }
+  header .contenedor #menu-check {
+    display: none;
+  }
+  header .contenedor #menu-check:checked ~ #menu-celu {
+    display: block;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 3px solid;
+    border-radius: 0.3em;
+    margin-left: 91%;
+    z-index: 999;
+  }
+  header .contenedor #menu-check:checked ~ #menu-celu #menu-abrir {
+    display: none;
+  }
+  header .contenedor #menu-check:checked ~ #menu-celu #menu-cerrar {
+    display: block;
+    color: white;
+  }
+  header .contenedor #menu-check:not(:checked) ~ #menu-celu {
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 3px solid;
+    border-radius: 0.3em;
+    margin-left: 91%;
+    z-index: 999;
+  }
+  header .contenedor #menu-check:not(:checked) ~ #menu-celu #menu-abrir {
+    display: block;
+    color: black;
+  }
+  header .contenedor #menu-check:not(:checked) ~ #menu-celu #menu-cerrar {
+    display: none;
+  }
+  header .contenedor #menu-check:not(:checked) ~ #menu-celu:hover #menu-abrir {
+    color: white;
+    background: black;
+  }
+  header .contenedor #menu-check:checked ~ nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: black;
+    padding-top: 0.5em;
+    padding-right: 4em;
+    opacity: 0.8;
+    color: white;
+    z-index: 2;
+  }
+  header .contenedor #menu-check:checked ~ nav ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: large;
+    font-family: sans-serif;
+  }
+  header .contenedor #menu-check:checked ~ nav ul li a {
+    display: block;
+    text-align: right;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+  }
+  header .contenedor #menu-check:not(:checked) ~ nav {
+    display: none;
+  }
+  main #carouselExampleFade {
+    z-index: 1;
+  }
+  main #foto-escritorio {
+    display: none;
+  }
+  main h1 {
+    display: grid;
+    grid-row: 1/2;
+    justify-items: center;
+    padding: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 20px 0px;
+  }
+  main p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: medium;
+  }
+  main .texto-inicio {
+    display: grid;
+    grid-row: 2/6;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+  }
+  main .fondo1 {
+    background-color: #9dae6f;
+    font-family: sans-serif;
+    font-size: medium;
+    padding: 10%;
+    color: white;
+    font-weight: bolder;
+    margin: 0;
+  }
+  main .fondo2 {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: medium;
+    padding: 5%;
+    color: #9dae6f;
+    font-weight: bolder;
+  }
+  main .iconos {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+    padding: 30px;
+  }
+  main #logo-general {
+    max-width: 10%;
+    margin-left: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  main .asesoria div a {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  main .asesoria div img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  main form input {
+    background-color: #9dae6f;
+    color: white;
+  }
+  main form label {
+    color: black;
+    font-family: sans-serif;
+  }
+  main form textarea {
+    background-color: #9dae6f;
+    color: white;
+  }
+  main #maps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+  }
+  footer div p {
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding: 1%;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: black;
+    opacity: 0.8;
+  }
+  header .contenedor #menu-check, header .contenedor #menu-celu {
+    display: none;
+  }
+  header .contenedor nav {
+    display: flex;
+    justify-content: center;
+  }
+  header .contenedor nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+    opacity: 0.8;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+  }
+  header .contenedor nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0px;
+  }
+  header .contenedor nav ul #menu-seleccionado a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin: 0px;
+  }
+  main #carouselExampleFade {
+    z-index: 1;
+  }
+  main #foto-mobile {
+    display: none;
+  }
+  main h1 {
+    display: grid;
+    grid-row: 1/2;
+    justify-items: center;
+    padding: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 20px 0px;
+  }
+  main p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: medium;
+  }
+  main .bloque-de-texto {
+    background-color: whitesmoke;
+  }
+  main .texto-inicio {
+    display: grid;
+    grid-row: 2/6;
+    font-family: Arial, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+  }
+  main .fondo1 {
+    background-color: #9dae6f;
+    font-family: sans-serif;
+    font-size: medium;
+    padding: 10%;
+    color: white;
+    font-weight: bolder;
+    margin: 0;
+  }
+  main .fondo2 {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: medium;
+    padding: 10%;
+    color: #9dae6f;
+    font-weight: bolder;
+    margin: 0;
+  }
+  main .iconos {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+    padding: 30px;
+  }
+  main #logo-general {
+    max-width: 5%;
+    margin-left: 95%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  main .asesoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+  }
+  main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  main form input {
+    background-color: #9dae6f;
+    color: white;
+  }
+  main form label {
+    color: black;
+    font-family: sans-serif;
+  }
+  main form textarea {
+    background-color: #9dae6f;
+    color: white;
+  }
+  main #maps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+  }
+  footer div p {
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding: 1%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */

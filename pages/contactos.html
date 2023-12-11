@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Bosco - Contacto</title>
+    <link rel="short icon" href="../img/Logo-Navedador.jpeg">
+    <link rel="stylesheet" href="../scss/main.css">
+
+      <!--boostrap-->
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+
+<body>
+
+    <header>
+        
+        <!--menu de navegacion-->
+        
+        <div class="contenedor">
+
+            <!-- botón para mobile-->
+
+            <input type="checkbox" id="menu-check">
+            <label id="menu-celu"  for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+
+            <!-- lista del menú - general-->
+            
+            <nav id="menu" class="container-fluid">
+
+            <ul class="row">
+
+                  <!--BOOSTRAP - breakpoint 12 columnas-->
+
+                <li class="col-lg-2 col-md-2 col-sm-12">
+                    <a href="../index.html">Inicio</a></li>
+                <li class="col-lg-2 col-md-2 col-sm-12">
+                    <a href="./arquitectura.html">Arquitectura</a></li>
+                <li class="col-lg-2 col-md-2 col-sm-12">
+                    <a href="./Interiorismo.html">Interiorismo</a></li>
+                <li class="col-lg-2 col-md-2 col-sm-12">
+                    <a href="./paisajismo.html">Paisajismo</a></li>
+                <li id="menu-seleccionado" class="col-lg-2 col-md-2 col-sm-12">
+                    <a href="./contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="container-fluid"><!--contenido de la seccion-->
+
+        <div class="row">
+            <img class="col-12" src="../img/Logo - Contacto.png" alt="Logo-Contacto" width="300" height="auto">
+        </div>
+
+        <h1>Contactos</h1>
+
+        <form action="" method="" enctype="text/plain">
+
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" required>
+
+            <br><br>
+
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="Apellido" required>
+
+            <br><br>
+
+            <label for="E-mail">E-mail</label>
+            <input type="mail" id="E-mail">
+
+            <br><br>
+
+            <label for="Teléfono">Teléfono</label>
+            <input type="number" id="Teléfono" required>
+
+            <br><br>
+
+            <label for="Mensaje">Mensaje</label>
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="¿Cómo te podemos ayudar?" required></textarea>
+
+            <br><br>
+     
+            <input type="reset" value="Borrar todo">
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+        <div id="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.9655979483277!2d-60.59764602376769!3d-33.91628497320854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b84ac7c0bbabcf%3A0xe7f5fa54279168ae!2sCmte.%20Espora%201506%2C%20Pergamino%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1698697107818!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div>
+            <a href="https://wa.me/5492477450615" target="_blank">
+            <img id="logo-general" src="../img/Logo-Whatspp-Color.png" alt="Logo-Whatspp-Color" width="50" height="50"></a>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid"><!--pie de pagina-->
+        
+        <!--BOOSTRAP - breakpoint 12 columnas-->
+
+       <div class="row">
+            <p id="footer" class="col-12">Pergamino, Buenos Aires</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
