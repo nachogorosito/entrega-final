@@ -83,22 +83,27 @@
             padding: 20px 0px;
         }
     
+        .bloque-de-texto {
+            background-color: whitesmoke;
+        }
+
+
         p {
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             font-style: normal;
             font-size: medium;
+
         }
     
-        .bloque-de-texto {
-            background-color: whitesmoke;
-        }
+       
     
         .texto-inicio {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-style: normal;
+            font-size: medium;
             display: grid;
             grid-row: 2/6;
-            font-family: Arial, sans-serif;
-            font-size: xx-large;
-            text-align: center;
+           
         }
     
         .fondo1{

@@ -97,8 +97,9 @@
     align-items: center;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     padding: 20px 0px;
+    background-color: aquamarine;
   }
-  main p {
+  main .p, main .texto-inicio {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-size: medium;
@@ -106,9 +107,6 @@
   main .texto-inicio {
     display: grid;
     grid-row: 2/6;
-    font-family: Arial, sans-serif;
-    font-size: medium;
-    text-align: center;
   }
   main .fondo1 {
     background-color: #9dae6f;
@@ -252,20 +250,20 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     padding: 20px 0px;
   }
+  main .bloque-de-texto {
+    background-color: whitesmoke;
+  }
   main p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-size: medium;
   }
-  main .bloque-de-texto {
-    background-color: whitesmoke;
-  }
   main .texto-inicio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: medium;
     display: grid;
     grid-row: 2/6;
-    font-family: Arial, sans-serif;
-    font-size: xx-large;
-    text-align: center;
   }
   main .fondo1 {
     background-color: #9dae6f;

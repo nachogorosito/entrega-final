@@ -117,7 +117,8 @@
             grid-row: 1/2;
             justify-items: center;
             padding: 30px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+            
         }
 
         h2 {
@@ -126,20 +127,19 @@
             align-items: center;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             padding: 20px 0px;
+            background-color: $colorextra;
         }
     
-        p {
+        .p {
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             font-style: normal;
             font-size: medium;
         }
 
         .texto-inicio {
+            @extend .p;
             display: grid;
             grid-row: 2/6;
-            font-family: Arial, sans-serif;
-            font-size: medium;
-            text-align: center;
         }
 
         .fondo1{
