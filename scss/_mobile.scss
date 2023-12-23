@@ -6,10 +6,19 @@
     }
 
     header {
+
+        .logocompu {
+            display: none;
+        }
+
         .contenedor {
             display: flex;
-            place-content: space-between;
+            justify-content: space-between;
             
+            .logocelu{
+                width: 300px;
+                }
+
             #menu-check{
                 display: none;
             }
@@ -18,8 +27,7 @@
                 display: block;
                 color: black;
                 font-size: 1.2em;
-                font-weight: bold;
-                border: 3px solid;
+                font-weight: bold;  
                 border-radius: 0.3em;
                 margin-left: 91%;
                 z-index: 999; 
@@ -30,6 +38,7 @@
                    }
 
                 #menu-cerrar {
+                    font-size: xx-large;
                     display: block;
                     color: white;
                    }
@@ -43,10 +52,12 @@
                 font-weight: bold;
                 border: 3px solid;
                 border-radius: 0.3em;
-                margin-left: 91%;
+                margin-top: 2%;
+                margin-left: 20%;
                 z-index: 999; 
 
                 #menu-abrir {
+                    font-size: xx-large;
                     display: block;
                     color: black;
                 }

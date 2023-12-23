@@ -4,9 +4,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+  header .logocompu {
+    display: none;
+  }
   header .contenedor {
     display: flex;
-    place-content: space-between;
+    justify-content: space-between;
+  }
+  header .contenedor .logocelu {
+    width: 300px;
   }
   header .contenedor #menu-check {
     display: none;
@@ -16,7 +22,6 @@
     color: black;
     font-size: 1.2em;
     font-weight: bold;
-    border: 3px solid;
     border-radius: 0.3em;
     margin-left: 91%;
     z-index: 999;
@@ -25,6 +30,7 @@
     display: none;
   }
   header .contenedor #menu-check:checked ~ #menu-celu #menu-cerrar {
+    font-size: xx-large;
     display: block;
     color: white;
   }
@@ -35,10 +41,12 @@
     font-weight: bold;
     border: 3px solid;
     border-radius: 0.3em;
-    margin-left: 91%;
+    margin-top: 2%;
+    margin-left: 20%;
     z-index: 999;
   }
   header .contenedor #menu-check:not(:checked) ~ #menu-celu #menu-abrir {
+    font-size: xx-large;
     display: block;
     color: black;
   }
@@ -196,8 +204,16 @@
     box-sizing: border-box;
   }
   header {
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     opacity: 0.8;
+  }
+  header .logocelu {
+    display: none;
+  }
+  header .logocompu {
+    width: 300px;
   }
   header .contenedor #menu-check, header .contenedor #menu-celu {
     display: none;
@@ -212,7 +228,7 @@
     gap: 20px;
     list-style-type: none;
     margin: 0px;
-    padding: 20px;
+    padding: 30px;
     opacity: 0.8;
     font-size: large;
     font-family: sans-serif;
@@ -259,9 +275,6 @@
     font-size: medium;
   }
   main .texto-inicio {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-size: medium;
     display: grid;
     grid-row: 2/6;
   }
@@ -285,7 +298,7 @@
   }
   main .iconos {
     display: grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: 70px 70px 70px;
     justify-content: center;
     padding: 30px;
   }
